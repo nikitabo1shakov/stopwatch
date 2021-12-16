@@ -1,4 +1,4 @@
-package com.nikitabolshakov.stopwatch.presentation.activity
+package com.nikitabolshakov.stopwatch.presentation.activity.splash
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.nikitabolshakov.stopwatch.databinding.ActivitySplashBinding
+import com.nikitabolshakov.stopwatch.presentation.activity.main.MainActivity
 
 private const val TIME_OF_LOAD_APP: Long = 3000
 

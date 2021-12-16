@@ -3,6 +3,8 @@ package com.nikitabolshakov.stopwatch.domain
 import com.nikitabolshakov.stopwatch.data.TimestampProvider
 import com.nikitabolshakov.stopwatch.data.StopwatchState
 
+private const val DEFAULT_TIME = 0L
+
 class ElapsedTimeCalculator(
     private val timestampProvider: TimestampProvider
 ) {
@@ -12,7 +14,7 @@ class ElapsedTimeCalculator(
         val timePassedSinceStart = if (currentTimestamp > state.startTime) {
             currentTimestamp - state.startTime
         } else {
-            0
+            DEFAULT_TIME
         }
         return timePassedSinceStart + state.elapsedTime
     }

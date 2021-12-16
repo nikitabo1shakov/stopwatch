@@ -1,4 +1,4 @@
-package com.nikitabolshakov.stopwatch.presentation.activity
+package com.nikitabolshakov.stopwatch.presentation.activity.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initObserve() {
         mainActivityViewModel.ticker.observe(this) {
-            binding.textTime.text = it
+            binding.timeTextView.text = it
         }
     }
 

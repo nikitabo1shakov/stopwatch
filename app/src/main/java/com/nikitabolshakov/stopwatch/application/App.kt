@@ -1,4 +1,4 @@
-package com.nikitabolshakov.stopwatch.app
+package com.nikitabolshakov.stopwatch.application
 
 import android.app.Application
 import com.nikitabolshakov.stopwatch.di.mainActivityViewModel

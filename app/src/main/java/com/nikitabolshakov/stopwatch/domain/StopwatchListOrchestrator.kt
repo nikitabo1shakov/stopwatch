@@ -14,7 +14,7 @@ class StopwatchListOrchestrator(
     val ticker: StateFlow<String> = mutableTicker
 
     fun start() {
-        if (job == null) startJob()
+        startJob()
         stopwatchStateHolder.start()
     }
 
@@ -40,7 +40,6 @@ class StopwatchListOrchestrator(
 
     private fun stopJob() {
         scope.coroutineContext.cancelChildren()
-        job = null
     }
 
     private fun clearValue() {
