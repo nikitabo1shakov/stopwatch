@@ -1,0 +1,1 @@
+C:\Users\nikit\AndroidStudioProjects\Stopwatch\buildSrc\build\classes\kotlin\main\Dependencies.class;C:\Users\nikit\AndroidStudioProjects\Stopwatch\buildSrc\build\classes\kotlin\main\Versions.class
